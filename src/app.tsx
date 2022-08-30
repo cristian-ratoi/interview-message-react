@@ -1,6 +1,6 @@
-import * as React from 'react';
-import { NavLink, Route, Routes } from 'react-router-dom';
-import { MessagePage } from './pages/message.page';
+import React from "react";
+import { NavLink, Route, Routes } from "react-router-dom";
+import { MessagePage } from "./pages/message.page";
 
 export const App = () => {
   return (
@@ -11,11 +11,9 @@ export const App = () => {
       </div>
       <div>
         <Routes>
-          <Route path="/message/:id" element={<MessagePage />} />
+          <Route path="/message/:id" element={<MessagePage/>}/>
         </Routes>
       </div>
     </div>
   );
 };
-
-export default App;
